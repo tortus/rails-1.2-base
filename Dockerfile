@@ -38,7 +38,7 @@ RUN apt-get -o Acquire::Check-Valid-Until=false update && \
 COPY php.ini /etc/php5/apache2/php.ini
 COPY on-server-start/*.sh /etc/on-server-start/
 
-ENV MIGRATE="true"
+ENV MIGRATE="false"
 
 HEALTHCHECK --interval=5m --timeout=3s \
   CMD curl -f http://localhost/ || exit 1
