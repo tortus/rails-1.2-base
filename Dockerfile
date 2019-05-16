@@ -1,4 +1,4 @@
-FROM tortus/rails-1.2-passenger-3:latest
+FROM tortus/rails-1.2-passenger-3:1.0.0
 
 ARG TZ="America/New_York"
 
